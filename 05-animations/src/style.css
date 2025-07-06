@@ -1,0 +1,20 @@
+.webgl {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-shadow: #000000 0px 0px 100px;
+  overflow: hidden;
+  background-color: #f10d0d;
+  padding: 25px;
+  margin-top: 8%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #242424;
+}
