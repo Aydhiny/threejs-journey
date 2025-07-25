@@ -20,7 +20,7 @@ loadingManager.onError = () => {
   console.log("onError");
 };
 const textureLoader = new THREE.TextureLoader(loadingManager);
-const colorTexture = textureLoader.load("textures/door/color.jpg");
+const colorTexture = textureLoader.load("textures/minecraft.png");
 const alphaTexture = textureLoader.load("textures/door/alpha.jpg");
 const heightTexture = textureLoader.load("textures/door/height.jpg");
 const normalTexture = textureLoader.load("textures/door/normal.jpg");
@@ -31,6 +31,15 @@ const metalnessTexture = textureLoader.load("textures/door/metalness.jpg");
 const roughnessTexture = textureLoader.load("textures/door/roughness.jpg");
 colorTexture.colorSpace = THREE.SRGBColorSpace;
 
+/* colorTexture.repeat.x = 1;
+colorTexture.repeat.y = 2; */
+/* colorTexture.wrapS = THREE.RepeatWrapping;
+colorTexture.wrapT = THREE.RepeatWrapping;
+colorTexture.center.x = 0.5;
+colorTexture.center.y = 0.5; */
+
+//colorTexture.rotation = Math.PI / 4;
+colorTexture.magFilter = THREE.NearestFilter;
 /**
  * Base
  */
